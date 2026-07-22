@@ -31,7 +31,7 @@ themeBtn.addEventListener("click", () => {
 document.querySelectorAll("a[href^='#']").forEach(link => {
 
 
-    link.addEventListener("click", function(e) {
+    link.addEventListener("click", function (e) {
 
         e.preventDefault();
 
@@ -63,7 +63,7 @@ document.querySelectorAll("a[href^='#']").forEach(link => {
 
 // Change this to your GitHub username
 
-const githubUsername = "YOUR_USERNAME";
+const githubUsername = "anu-git-lab";
 
 
 const repoContainer = document.getElementById(
@@ -73,24 +73,24 @@ const repoContainer = document.getElementById(
 
 
 fetch(`https://api.github.com/users/${githubUsername}/repos`)
-.then(response => response.json())
+    .then(response => response.json())
 
-.then(data => {
-
-
-    repoContainer.innerHTML = "";
+    .then(data => {
 
 
-    data.slice(0,6).forEach(repo => {
+        repoContainer.innerHTML = "";
 
 
-        const repoCard = document.createElement("div");
+        data.slice(0, 6).forEach(repo => {
 
 
-        repoCard.classList.add("repo");
+            const repoCard = document.createElement("div");
 
 
-        repoCard.innerHTML = `
+            repoCard.classList.add("repo");
+
+
+            repoCard.innerHTML = `
 
             <h3>${repo.name}</h3>
 
@@ -106,27 +106,27 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
         `;
 
 
-        repoContainer.appendChild(repoCard);
+            repoContainer.appendChild(repoCard);
 
+
+
+        });
+
+
+
+    })
+
+    .catch(error => {
+
+
+        repoContainer.innerHTML =
+            "Unable to load GitHub repositories";
+
+
+        console.log(error);
 
 
     });
-
-
-
-})
-
-.catch(error => {
-
-
-    repoContainer.innerHTML =
-    "Unable to load GitHub repositories";
-
-
-    console.log(error);
-
-
-});
 
 
 
@@ -140,7 +140,7 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
 
 
 const projectButtons =
-document.querySelectorAll(".project-btn");
+    document.querySelectorAll(".project-btn");
 
 
 
@@ -172,7 +172,7 @@ projectButtons.forEach(button => {
 
 
 const sections =
-document.querySelectorAll("section");
+    document.querySelectorAll("section");
 
 
 
@@ -183,19 +183,19 @@ window.addEventListener("scroll", () => {
 
 
         const position =
-        section.getBoundingClientRect().top;
+            section.getBoundingClientRect().top;
 
 
         const screenHeight =
-        window.innerHeight;
+            window.innerHeight;
 
 
 
-        if(position < screenHeight - 100){
+        if (position < screenHeight - 100) {
 
             section.style.opacity = "1";
             section.style.transform =
-            "translateY(0)";
+                "translateY(0)";
 
         }
 
@@ -216,11 +216,11 @@ sections.forEach(section => {
     section.style.opacity = "0";
 
     section.style.transform =
-    "translateY(50px)";
+        "translateY(50px)";
 
 
     section.style.transition =
-    "0.6s ease";
+        "0.6s ease";
 
 
 });
