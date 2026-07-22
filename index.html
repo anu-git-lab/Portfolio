@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
- <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Reji Anu | Portfolio</title>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- CSS File -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
+
 <body>
+
+
     <!-- Header -->
-    <header class="header">
+    <header>
 
         <nav class="navbar">
 
-            <div class="logo">
+            <h2 class="logo">
                 Reji<span>.</span>
-            </div>
+            </h2>
 
 
             <ul class="nav-links">
+
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
 
 
-            <button id="theme-toggle" aria-label="Change theme">
+            <button id="theme-btn">
                 🌙
-            </button>
-
-
-            <button class="menu-btn" aria-label="Open menu">
-                ☰
             </button>
 
 
@@ -55,11 +57,11 @@
     <main>
 
 
-        <!-- Hero Section -->
+        <!-- Home Section -->
         <section id="home" class="hero">
 
 
-            <div class="hero-content">
+            <div class="hero-text">
 
                 <h1>
                     Hello, I'm <span>Reji Anu</span>
@@ -67,40 +69,36 @@
 
 
                 <h2>
-                    Japanese Language Tutor &
-                    Software Engineering Student
+                    Software Engineering Student &
+                    Japanese Language Tutor
                 </h2>
 
 
                 <p>
-                    I create responsive websites and learn modern
-                    technologies while combining my language and
-                    technical skills.
+                    I create responsive websites and improve my
+                    programming skills while combining technology
+                    and language experience.
                 </p>
 
 
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="btn">
-                        View Projects
-                    </a>
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
 
 
-                    <a href="#contact" class="btn secondary">
-                        Contact Me
-                    </a>
-
-                </div>
+                <a href="#contact" class="btn second">
+                    Contact
+                </a>
 
 
             </div>
 
 
 
-            <div class="hero-image">
+            <div class="hero-img">
 
                 <img src="images/profile.jpg"
-                    alt="Profile photo of Reji Anu">
+                    alt="Profile photo">
 
             </div>
 
@@ -109,11 +107,13 @@
 
 
 
+
+
         <!-- About Section -->
-        <section id="about" class="about">
+        <section id="about">
 
 
-            <h2 class="section-title">
+            <h2>
                 About Me
             </h2>
 
@@ -121,17 +121,14 @@
             <article>
 
                 <p>
-                    I am a Japanese language tutor and a Diploma
-                    in Software Engineering student.
-                    I have experience working in Japan and teaching
-                    Japanese to students preparing for JLPT exams.
+                    I am studying Diploma in Software Engineering
+                    and I have experience teaching Japanese language.
                 </p>
 
 
                 <p>
-                    My goal is to develop my programming skills
-                    and create useful applications using modern
-                    web technologies.
+                    I enjoy learning programming, creating websites,
+                    and developing useful software projects.
                 </p>
 
 
@@ -141,18 +138,303 @@
         </section>
 
 
+
+
+
+        <!-- Skills Section -->
+        <section id="skills">
+
+
+            <h2>
+                My Skills
+            </h2>
+
+
+            <div class="skills-container">
+
+
+                <div class="skill">
+                    HTML5
+                </div>
+
+
+                <div class="skill">
+                    CSS3
+                </div>
+
+
+                <div class="skill">
+                    JavaScript
+                </div>
+
+
+                <div class="skill">
+                    Java
+                </div>
+
+
+                <div class="skill">
+                    Git & GitHub
+                </div>
+
+
+                <div class="skill">
+                    Japanese Language
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- Timeline Section -->
+        <section id="timeline">
+
+
+            <h2>
+                My Journey
+            </h2>
+
+
+            <div class="timeline">
+
+
+                <article>
+
+                    <h3>
+                        2015 - 2019
+                    </h3>
+
+                    <p>
+                        Studied and worked in Japan.
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>
+                        2024
+                    </h3>
+
+                    <p>
+                        Started Software Engineering studies.
+                    </p>
+
+                </article>
+
+
+
+                <article>
+
+                    <h3>
+                        2026
+                    </h3>
+
+                    <p>
+                        Developing web and Java projects.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- Projects Section -->
+        <section id="projects">
+
+
+            <h2>
+                My Projects
+            </h2>
+
+
+
+            <div class="project-container">
+
+
+
+                <article class="project-card">
+
+                    <img src="images/project1.jpg"
+                        alt="Number guessing game">
+
+
+                    <h3>
+                        Number Guessing Game
+                    </h3>
+
+
+                    <p>
+                        A simple interactive game created
+                        using HTML, CSS and JavaScript.
+                    </p>
+
+
+                    <button class="project-btn">
+                        View More
+                    </button>
+
+
+                </article>
+
+
+
+
+
+                <article class="project-card">
+
+                    <img src="images/project2.jpg"
+                        alt="Burger shop project">
+
+
+                    <h3>
+                        Burger Shop System
+                    </h3>
+
+
+                    <p>
+                        Java OOP application for managing
+                        burger orders.
+                    </p>
+
+
+                    <button class="project-btn">
+                        View More
+                    </button>
+
+
+                </article>
+
+
+
+
+
+                <article class="project-card">
+
+                    <img src="images/project3.jpg"
+                        alt="Website project">
+
+
+                    <h3>
+                        HTML Reference Website
+                    </h3>
+
+
+                    <p>
+                        A learning website created with
+                        HTML and CSS.
+                    </p>
+
+
+                    <button class="project-btn">
+                        View More
+                    </button>
+
+
+                </article>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- GitHub Section -->
+        <section id="github">
+
+
+            <h2>
+                GitHub Projects
+            </h2>
+
+
+            <div id="repositories">
+
+                Loading repositories...
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+
+            <h2>
+                Contact Me
+            </h2>
+
+
+            <form>
+
+
+                <input type="text"
+                    placeholder="Your Name"
+                    aria-label="Name">
+
+
+                <input type="email"
+                    placeholder="Your Email"
+                    aria-label="Email">
+
+
+                <textarea placeholder="Message"></textarea>
+
+
+                <button type="submit">
+                    Send
+                </button>
+
+
+            </form>
+
+
+        </section>
+
+
+
     </main>
+
+
 
 
 
     <!-- Footer -->
     <footer>
 
+
         <p>
-            © 2026 Reji Anu. All Rights Reserved.
+            © 2026 Reji Anu | Portfolio
         </p>
 
+
     </footer>
+
 
 
 
@@ -161,4 +443,5 @@
 
 
 </body>
+
 </html>
